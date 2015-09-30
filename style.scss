@@ -1,0 +1,77 @@
+@import 'normalize';
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+body {
+  font-family: Inconsolata, monospace;
+}
+canvas {
+  outline: none;
+}
+
+.wrapper {
+  padding: 50px;
+  overflow: auto;
+}
+
+.controls {
+  float: left;
+  width: 300px;
+}
+
+.settings--hidden {
+  display: none;
+}
+
+.settings__title {
+  text-align: center;
+}
+
+fieldset {
+  background-color: #c5c5d0;
+  box-shadow: 6px 6px black;
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+}
+
+legend {
+  display: block;
+}
+
+input[type=range] {
+  width: 100%;
+}
+
+#brush {
+  display: block;
+  margin: 0 auto;
+}
+
+.buttons {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.btn {
+  padding: 8px 12px;
+  background-color: #c5c5d0;
+  color: black;
+  text-decoration: none;
+  box-shadow: 3px 3px black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.draw-area {
+  float: right;
+}
+
+#canvas {
+  margin: auto 0;
+  display: block;
+  max-width: 100%;
+  float: right;
+  height: auto;
+}

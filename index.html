@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canvas Circle Drawing App</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="js/canvas.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <section class="controls">
+      <canvas id="brush" width="100" height="100"></canvas>
+      <form id="settings" class="settings settings--hidden">
+        <fieldset>
+          <p class="settings__title">First Color</p>
+          <label for="first-hue">Hue</label>
+          <input type="range" id="first-hue" name="first-hue" min="0" value="180" max="360">
+          <label for="first-saturation">Saturation</label>
+          <input type="range" id="first-saturation" name="first-saturation" min="0" value="100" max="100">
+          <label for="first-lightness">Lightness</label>
+          <input type="range" id="first-lightness" name="first-lightness" min="0" value="50" max="100">
+        </fieldset>
+        <fieldset>
+          <p class="settings__title">Second Color</p>
+          <label for="second-hue">Hue</label>
+          <input type="range" id="second-hue" name="second-hue" min="0" value="240" max="360">
+          <label for="second-saturation">Saturation</label>
+          <input type="range" id="second-saturation" name="second-saturation" min="0" value="100" max="100">
+          <label for="second-lightness">Lightness</label>
+          <input type="range" id="second-lightness" name="second-lightness" min="0" value="50" max="100">
+        </fieldset>
+        <fieldset>
+          <p class="settings__title">Stroke width</p>
+          <input type="range" id="stroke-width" name="stroke-width" min="1" value="3" max="10">
+        </fieldset>
+        <fieldset id="background-color">
+          <p class="settings__title">Background color</p>
+          <label for="background-hue">Hue</label>
+          <input type="range" id="background-hue" name="background-hue" min="0" value="300" max="360">
+          <label for="background-saturation">Saturation</label>
+          <input type="range" id="background-saturation" name="background-saturation" min="0" value="100" max="100">
+          <label for="background-lightness">Lightness</label>
+          <input type="range" id="background-lightness" name="background-lightness" min="0" value="50" max="100">
+        </fieldset>
+      </form>
+      <div class="buttons">
+        <a href="#" class="btn" id="button__settings">Settings</a>
+        <a href="#" class="btn" id="button__save">Save</a>
+        <a href="#" class="btn" id="button__clear">Clear</a>
+      </div>
+    </section>
+    <section class="draw-area">
+      <canvas tabindex='1' id="canvas" width="800" height="600"></canvas>
+    </section>
+  </div>
+</body>
+</html>
